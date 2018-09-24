@@ -20,24 +20,32 @@ public class GoMain {
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub11
 		System.out.println("Hellow");
-		List<String> l1 = new ArrayList<String>();
-		//InputStream is = new InputStream();
-		InputStreamReader ir = new InputStreamReader(System.in);
-		BufferedReader br = new BufferedReader(ir);
-		String flg = "";
-		
-		while(!flg.equals("over")) {
-			flg = br.readLine(); 
-
-			l1.add(flg);
-			if (l1.size() > 5) {
-				flg = "over";
-			}
-		}
-		for(String str : l1) {
-			System.out.println("out put : " + str);
-					
-		}
+//		List<String> l1 = new ArrayList<String>();
+//		//InputStream is = new InputStream();
+//		InputStreamReader ir = new InputStreamReader(System.in);
+//		BufferedReader br = new BufferedReader(ir);
+//		String flg = "";
+//		
+//		while(!flg.equals("over")) {
+//			flg = br.readLine(); 
+//
+//			l1.add(flg);
+//			if (l1.size() > 5) {
+//				flg = "over";
+//			}
+//		}
+//		for(String str : l1) {
+//			System.out.println("out put : " + str);
+//					
+//		}
+		SumCalculate sc = new SumCalculate();
+//		System.out.println(sc.seriesSum(5));
+//		System.out.println(sc.seriesSum(9));
+//		System.out.println(sc.seriesSum(15));
+		System.out.println(sc.seriesSum2(5));
+		System.out.println(sc.seriesSum2(9));
+		System.out.println(sc.seriesSum2(15));
+		System.out.println(sc.calc());
 	}
 
 }
