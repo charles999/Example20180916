@@ -47,5 +47,10 @@ public class GoMain {
 		System.out.println(sc.seriesSum2(15));
 		System.out.println(sc.calc());
 	}
+	public static String[] inArray(String[] array1, String[] array2) {
+		String str1 = array1[0];
+		System.out.println(str1.length());
+		 return new String[] { "arp" };
+	}
 
 }
