@@ -52,5 +52,28 @@ public class TrainFromCodewar {
 		return time;
         // your code
     }
-
+	public static double findUniq(double arr[]) {
+	      // Do the magic
+	      
+	      int y = 1;
+	      int x = 0;
+	      double v = 0;
+	      double sam = arr[0];
+	      for(int i=1;i< arr.length ;i++){
+	        
+	        if(sam == arr[i]) {
+	          y++;
+	        } else {
+	          v = arr[i];   
+	          x++;
+	        }
+	        if(y > 1 && x > 0) {
+	        	break;
+	        }
+	      }
+	      if (y > x) {
+	      return v;
+	      }
+	      return sam;
+	    }
 }
